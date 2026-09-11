@@ -43,7 +43,7 @@ export default {
         { url: "/slogans/sleep/", prompt: "If a teenager can't fall asleep early, that's mostly their body clock, not laziness.", options: TF, answer: 0,
           why: "Through puberty the sleepy chemistry arrives later in the evening. It's biology, not a character flaw." },
         { url: "/slogans/sun/", prompt: "A tan from a sunbed is a safe way to protect your skin.", options: TF, answer: 1,
-          why: "Sunbeds are a top-category carcinogen — the same danger group as tobacco. Sunscreen, a shirt and shade are the real protection." },
+          why: "Sunbeds are on the top list of things proven to cause cancer — the same list as tobacco. Sunscreen, a shirt and shade are the real protection." },
       ],
     },
     {
@@ -69,7 +69,7 @@ export default {
             "Going from very fit to elite",
             "Moving out of the least-active group",
             "Hitting one specific daily target" ], answer: 1,
-          why: "The curve is front-loaded: leaving the bottom band buys more than a fit person gains by training even harder." },
+          why: "Most of the benefit comes first: leaving the least-active group buys more than a fit person gains by training even harder." },
         { url: "/slogans/sleep/", prompt: "Teenagers' body clocks naturally run late — it's biology, not laziness.", options: TF, answer: 0,
           why: "Through puberty, the chemistry that makes you sleepy arrives later. A 15-year-old who can't sleep at 10pm is being 15, not difficult." },
         { url: "/slogans/sun/", prompt: "Which is true about melanoma (a type of skin cancer)?", options: [
@@ -88,12 +88,12 @@ export default {
             "Any single drink is extremely dangerous",
             "Risk rises from the very first drink with no safe threshold — though one drink's risk is small",
             "It's a scare with no evidence" ], answer: 1,
-          why: "It's about the shape of the line (it rises from zero), not the size of one drink. Say both halves to be honest." },
+          why: "No amount is good for you, and the risk starts at the first drink — but one drink adds only a small risk. Say both halves to be honest." },
         { url: "/slogans/gambling/", prompt: "Harm from gambling tracks mostly:", options: [
             "The player's willpower",
             "The product's design — faster, non-stop games hurt more people",
             "Pure chance" ], answer: 1,
-          why: "Like tar in a cigarette, the harm tracks the product. Fast, continuous games (online slots) cause more disorder than slower ones." },
+          why: "Like tar in a cigarette, the harm tracks the product. Fast, continuous games (online slots) cause more problem gambling than slower ones." },
         { url: "/slogans/movement/", prompt: "How much movement do you need for most of the benefit?", options: [
             "A great deal, every single day",
             "Less than most people think — most of it arrives early",
@@ -108,7 +108,7 @@ export default {
             "A 'base tan' from a sunbed first",
             "Sunscreen, a shirt, and shade",
             "Nothing makes a difference" ], answer: 1,
-          why: "The simple actions are backed by an actual randomised trial. Sunbeds sell you the exact exposure the evidence warns against." },
+          why: "The simple actions are backed by a proper experiment, with people split into groups by chance. Sunbeds sell you exactly what the evidence warns against." },
       ],
     },
     {
@@ -120,12 +120,12 @@ export default {
           why: "The risk is largely reversible if you get out early. Before 40 avoids >90%; before 30, >97% (Pirie et al. 2013)." },
         { url: "/slogans/alcohol/", prompt: "'No safe dose' is best understood as:", options: [
             "Alcohol is extremely dangerous in any amount",
-            "A claim about the shape of the curve (risk rises from zero), not the size of the risk",
+            "Risk starts at the first drink and rises with every one — though one drink adds only a small risk",
             "A scare with no evidence behind it" ], answer: 1,
-          why: "It's a monotonicity claim — the curve rises from zero, with no protective threshold — but the absolute risk of one drink is small." },
+          why: "Two halves: there is no amount below which alcohol is harmless or protective — but the extra risk from one drink is small. Say both, or you'll be caught out." },
         { url: "/slogans/gambling/", prompt: "The strongest part of the case against gambling is:", options: [
             "The suicide statistics", "The published house edge — arithmetic, not statistics", "Survey data on how many people gamble" ], answer: 1,
-          why: "The negative expected value is a design parameter the operator chose and printed. It needs no p-value and is unanswerable." },
+          why: "The average loss per bet (the negative expected value) is a design setting the operator chose and printed. No statistics needed — it's arithmetic." },
         { url: "/slogans/movement/", prompt: "The dose-response between activity and mortality is best described as:", options: [
             "Linear all the way up — more is always proportionally better",
             "Steeply front-loaded — the biggest gain is leaving the least-active band",
@@ -143,13 +143,13 @@ export default {
             "A rough single estimate", "Reproduced across different countries, sexes and decades", "From one small study" ], answer: 1,
           why: "It's one of the most reproduced findings in science — British Doctors Study, Million Women Study, US cohorts — with the mechanism traced to the DNA." },
         { url: "/slogans/alcohol/", prompt: "The genetic (Mendelian randomisation) studies of alcohol show:", options: [
-            "A protective J-curve at low doses", "A monotonic rise in risk, undoing the old J-curve", "No relationship at all" ], answer: 1,
-          why: "Genotype is fixed at conception, so it can't be confounded by sick-quitters. The apparent 'protection' at low doses was confounding." },
+            "A protective J-curve at low doses", "Risk rising steadily with every drink, undoing the old J-curve", "No relationship at all" ], answer: 1,
+          why: "Genes are fixed at conception, so they can't be skewed by people who stopped drinking because they were ill. The apparent 'protection' at low doses came from that kind of mix-up." },
         { url: "/slogans/gambling/", prompt: "Gambling harm is 'product-specific', meaning:", options: [
             "Only weak-willed people are affected",
-            "Faster, more continuous products (online slots) cause more disorder than slower ones",
+            "Faster, more continuous products (online slots) cause more problem gambling than slower ones",
             "It's entirely random who is harmed" ], answer: 1,
-          why: "Disorder rates are far higher for online slots than sports betting — harm tracks the design (speed, continuity), not the character." },
+          why: "Problem-gambling rates are far higher for online slots than sports betting — harm tracks the design (speed, continuity), not the character." },
         { url: "/slogans/movement/", prompt: "The causal evidence for activity is strongest:", options: [
             "At the very top of the curve", "At the bottom — leaving the least-active group", "Nowhere; it's all confounded" ], answer: 1,
           why: "Mendelian-randomisation support is best exactly where the effect is largest: at the bottom of the distribution." },

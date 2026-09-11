@@ -2,7 +2,7 @@
 layout: slogan.njk
 order: 6
 slogan: "Sleep like it matters"
-verdict: "Excellent short-term evidence, weak long-term causal evidence — a lever on how you feel this month, not on how long you live."
+verdict: "Strong proof that sleep changes how you feel this month; weak proof that it changes how long you live."
 confidence: moderate
 clock: ten-year
 ---
@@ -17,32 +17,34 @@ So the honest reason to protect your sleep is not fear. It is that sleep is the 
 
 First, the fact that earns you a bit of fairness: **teenagers' body clocks genuinely run late.** As you go through puberty, the chemistry that makes you sleepy arrives later in the evening. A 15-year-old who can't fall asleep at 10pm isn't being lazy or difficult — they are being 15. That is biology, not a character flaw.
 
-Now the useful part, and notice what it is *not*: it is not "sleep or you'll die young." The honest pitch is that **sleep is the best-evidenced short-term lever on how you actually feel** — your mood, your attention, your ability to handle a bad day. Lose sleep and those get measurably worse; get it back and they recover.
+Now the useful part, and notice what it is *not*: it is not "sleep or you'll die young." The honest pitch is that **sleep is the best-proven quick way to change how you actually feel** — your mood, your attention, your ability to handle a bad day. Lose sleep and those get measurably worse; get it back and they recover.
 
-And the fix is often about the **environment, not effort**: when a real school pushed its start time later, students slept more and did better — nobody had to "try harder." So the fixable part isn't blaming yourself for the hours you can't get; it's protecting the ones you can.
+And the fix is often about your **surroundings, not effort**: when a real school pushed its start time later, students slept more and did better — nobody had to "try harder." So the fixable part isn't blaming yourself for the hours you can't get; it's protecting the ones you can.
 
 The things that actually protect sleep are boringly practical, and they are about your surroundings more than your character: keep roughly regular hours, a dark and cool room, **dim the bright screens in the hour before bed** (bright evening light pushes your body clock even later), and keep caffeine — energy drinks especially — **out of the afternoon and evening** (it disrupts sleep even six hours before bed). None of that is willpower; it's just setting the stage.
 
 ## For ages 16+
 
-Narrowly: adequate sleep reliably improves mood, attention and emotional regulation over days-to-weeks — that part is experimental — and adolescent late sleep timing is biology, not laziness. The long-term "sleep saves your life" claim is much weaker, and we do not lean on it.
+Narrowly: enough sleep reliably improves mood, attention and emotional control over days to weeks — that part has been tested in experiments — and teenagers' late sleep timing is biology, not laziness. The long-term "sleep saves your life" claim is much weaker, and we do not lean on it.
 
-The honest case for sleep is the **two weeks, not the fifty years.** Short-term experimental sleep restriction reliably degrades attention, mood and emotional regulation; that is the immediately relevant, well-evidenced part. The environmental lever is real too: a delayed school start produced objectively more sleep, measured by actigraphy, with better grades and attendance.
+The honest case for sleep is the **two weeks, not the fifty years.** Experiments that cut people's sleep short reliably make attention, mood and emotional control worse; that is the immediately relevant, well-evidenced part. The environmental lever is real too: a later school start produced more sleep, measured with wrist trackers, with better grades and attendance.
 
-How today bends future risk: honestly, the long-term causal story is weak — the U-shaped associations between sleep duration and mortality are badly confounded by reverse causation, because illness both shortens and lengthens sleep, and there will never be a randomised trial of lifetime sleep. So the durable move is to treat sleep as a daily performance-and-mood lever and protect its conditions (light, timing, a phone that isn't in the bed), rather than to frame it as a distant survival threat.
+How today affects later: honestly, the long-term cause-and-effect story is weak — studies linking sleep length to dying early are badly muddled by reverse causation, because illness can both shorten and lengthen sleep, and there will never be an experiment on lifetime sleep. So the durable move is to treat sleep as a daily lever on how you perform and feel, and protect its conditions (light, timing, a phone that isn't in the bed), rather than to frame it as a distant survival threat.
 
 ## The evidence
 
-- **Adolescent circadian phase delay is biology, not laziness** ([Crowley, Acebo & Carskadon, Sleep Med 2007](<https://doi.org/10.1016/j.sleep.2006.12.002>)) — melatonin onset shifts later through puberty. A teenager who cannot sleep at 10pm is not being difficult; they are being 15.
-- **Consensus: 8–10 hours** per night for 13–18-year-olds ([Paruthi et al., J Clin Sleep Med 2016](<https://doi.org/10.5664/jcsm.5866>), American Academy of Sleep Medicine).
-- **Dunster et al., [Sci Adv 2018;4:eaau6200](<https://doi.org/10.1126/sciadv.aau6200>)** — Seattle delayed high-school start times by 55 minutes; wrist-actigraphy-measured sleep increased by **34 minutes**, with improved grades and attendance. A natural experiment with objective measurement — rare and valuable here.
-- Short-term experimental sleep restriction reliably degrades attention, mood and emotional regulation (a large randomised-experimental literature). This is the part that matters most day to day.
-- **Caffeine disrupts sleep, even hours ahead** — **[Drake et al., J Clin Sleep Med 2013;9:1195](<https://pubmed.ncbi.nlm.nih.gov/24235903/>)**: caffeine taken 0, 3 or even 6 hours before bed measurably reduced sleep. Afternoon energy drinks are the practical culprit.
-- **Bright evening light and screens delay the body clock** — **[Chang et al., PNAS 2015;112:1232](<https://pubmed.ncbi.nlm.nih.gov/25535358/>)**: light-emitting screens before bed suppressed melatonin, pushed the circadian clock later and reduced next-morning alertness.
-- **For persistent insomnia, the treatment is CBT-I, not a hygiene checklist** — **[Qaseem et al., Ann Intern Med 2016;165:125](<https://pubmed.ncbi.nlm.nih.gov/27136449/>)**: the American College of Physicians recommends cognitive behavioural therapy for insomnia as first-line. Sleep-hygiene advice alone is not an adequate treatment for clinical insomnia.
+*This part is the same for every age: it is where the facts above come from. Each study is described in plain words first, then named so you can look it up. Stuck on a word? See [Words we use](/words/).*
+
+- **Teenagers' body clocks really do run late.** During puberty, the brain starts releasing melatonin — the hormone that makes you sleepy — later in the evening (a shift in the *circadian rhythm*, the body's 24-hour clock). A teenager who cannot sleep at 10pm is not being difficult; they are being 15. **[Crowley, Acebo & Carskadon, Sleep Med 2007](<https://doi.org/10.1016/j.sleep.2006.12.002>)**.
+- **How much sleep teenagers need.** Sleep experts agree on **8–10 hours** a night for 13–18-year-olds ([Paruthi et al., J Clin Sleep Med 2016](<https://doi.org/10.5664/jcsm.5866>), American Academy of Sleep Medicine).
+- **Starting school later worked.** When Seattle's high schools started 55 minutes later, students — wearing wrist trackers, so their sleep was measured rather than guessed — slept **34 minutes** more, and their grades and attendance improved. A *natural experiment* with real measurements — rare and valuable here. **Dunster et al., [Sci Adv 2018;4:eaau6200](<https://doi.org/10.1126/sciadv.aau6200>)**.
+- **Losing sleep makes today worse.** Many experiments that cut volunteers' sleep short show it reliably makes attention, mood and emotional control worse. This is the part that matters most day to day.
+- **Caffeine disrupts sleep, even hours ahead.** Caffeine taken at bedtime, 3 hours before, or even 6 hours before bed measurably reduced sleep — **[Drake et al., J Clin Sleep Med 2013;9:1195](<https://pubmed.ncbi.nlm.nih.gov/24235903/>)**. Afternoon energy drinks are the everyday culprit.
+- **Bright screens push your body clock later.** Reading on a light-emitting tablet before bed, compared with a printed book, lowered melatonin, shifted the body clock later and left people less alert the next morning — **[Chang et al., PNAS 2015;112:1232](<https://pubmed.ncbi.nlm.nih.gov/25535358/>)**.
+- **For insomnia that won't go away, the treatment is a therapy, not a checklist.** The American College of Physicians recommends CBT-I — cognitive behavioural therapy for insomnia, a short course that changes sleep habits and worries — as the first treatment to try. Tips on sleep habits alone are not enough for real insomnia. **[Qaseem et al., Ann Intern Med 2016;165:125](<https://pubmed.ncbi.nlm.nih.gov/27136449/>)**.
 
 ## The honest weakness
 
-The long-term observational literature — the U-shaped associations between sleep duration and mortality — is badly confounded by reverse causation, because illness both shortens and lengthens sleep. There is no randomised trial of lifetime sleep duration and there never will be. Claims that sleep loss "causes" Alzheimer's disease in humans outrun the evidence. So the honest case for sleep is the near one — how you feel over days and weeks — not a distant survival claim.
+Studies that link how long people sleep to how long they live are badly muddled, because illness can cause both too little and too much sleep — so it is hard to tell which causes which (reverse causation). There is no experiment on lifetime sleep and there never will be. Claims that lack of sleep "causes" Alzheimer's disease in humans go beyond the evidence. So the honest case for sleep is the near one — how you feel over days and weeks — not a distant survival claim.
 
-And be honest about "sleep hygiene" too: the practical basics above help most people modestly and are worth doing, but for genuine, persistent insomnia they are *not* a treatment. The evidence-based therapy is CBT-I, not a longer list of rules — do not oversell tidy habits as a cure.
+And be honest about "sleep hygiene" too: the practical basics above help most people a little and are worth doing, but for genuine, persistent insomnia they are *not* a treatment. The proven therapy is CBT-I, not a longer list of rules — do not oversell tidy habits as a cure.

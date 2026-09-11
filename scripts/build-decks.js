@@ -20,6 +20,7 @@ import path from "node:path";
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const SLOGANS_DIR = path.join(ROOT, "content", "slogans");
 const OUT_DIR = path.join(ROOT, "slides", "_generated");
+const FIVE_THINGS = path.join(ROOT, "content", "five-things.md");
 
 const BANDS = [
   { key: "8-11", heading: "For ages 8–11", label: "Ages 8–11", file: "deck-8-11.md" },
@@ -108,6 +109,18 @@ function paginate(section) {
   return slides.length ? slides : [""];
 }
 
+// The short version's point for this band: just the bold headline of each
+// numbered item — the explanation and the evidence link belong on the site.
+function fiveThings(heading) {
+  if (!fs.existsSync(FIVE_THINGS)) return [];
+  const { body } = parse(fs.readFileSync(FIVE_THINGS, "utf8"));
+  return sectionFor(body, heading)
+    .split("\n")
+    .map((line) => line.match(/^(\d+)\.\s+\*\*(.+?)\*\*/))
+    .filter(Boolean)
+    .map(([, n, text]) => `${n}. **${text}**`);
+}
+
 function buildDeck(band, slogans) {
   const parts = [header(`Living Well — ${band.label}`)];
 
@@ -118,7 +131,7 @@ function buildDeck(band, slogans) {
 ### ${band.label}
 
 *Evidence-based pointers on living well —*
-*each with its study design, its effect size, and its honest weakness.*
+*each with how it was tested, how big the effect is, and its weakest point.*
 `);
 
   for (const s of slogans) {
@@ -130,6 +143,9 @@ function buildDeck(band, slogans) {
       parts.push(`---\n\n## ${title}\n\n${slide}\n`);
     });
   }
+
+  const five = fiveThings(band.heading);
+  if (five.length) parts.push(`---\n\n## Five things to remember\n\n${five.join("\n")}\n`);
 
   // Closing slide
   parts.push(`---

@@ -39,14 +39,15 @@ A note on the arithmetic: a few figures (the roulette house edge, slot return-to
 
 ### Gambling
 
-- **Wardle et al., [Lancet Public Health 2024](<https://doi.org/10.1016/S2468-2667(24)00167-1>)** (Commission on Gambling) — 46.2% of adults and 17.9% of adolescents gambled in the past year; 10.3% of adolescents online; any-risk gambling in 5.5% of women and 11.9% of men; ~448.7 million adults affected; gambling disorder in 15.8% of online casino/slot players versus 8.9% of sports bettors; net losses near US$700 billion by 2028; legal in >80% of countries.
-- **Muggleton et al., [Nat Hum Behav 2021;5:319](<https://doi.org/10.1038/s41562-020-01045-w>)** — 6.5 million UK bank customers; dose-responsive financial distress and mortality.
+- **Wardle et al., [Lancet Public Health 2024](<https://doi.org/10.1016/S2468-2667(24)00167-1>)** (Commission on Gambling) — 46.2% of adults and 17.9% of adolescents gambled in the past year; 10.3% of adolescents online; any-risk gambling in 5.5% of women and 11.9% of men; ~448.7 million adults affected; problem gambling in 15.8% of online casino/slot players versus 8.9% of sports bettors; net losses near US$700 billion by 2028; legal in >80% of countries.
+- **Tran et al., [Lancet Public Health 2024;9:e594](<https://doi.org/10.1016/S2468-2667(24)00126-9>)** — the Commission's companion systematic review and meta-analysis: 46.2% of adults and 17.9% of adolescents gambled in the past 12 months; problematic gambling highest among online casino/slot gamblers (15.8%).
+- **Muggleton et al., [Nat Hum Behav 2021;5:319](<https://doi.org/10.1038/s41562-020-01045-w>)** — 6.5 million UK bank customers; gambling associated with financial distress, and at the highest levels with substantially increased mortality.
 - **Karlsson & Håkansson, [J Behav Addict 2018](<https://doi.org/10.1556/2006.7.2018.112>)** — ~15-fold elevated suicide rate in gambling disorder (Swedish registers).
 - **Gambling design parameters** (definitions / published specifications, not estimates) — single-zero roulette house edge 2.7% (= 1/37); double-zero 5.26% (= 2/38); UK online slots return-to-player typically 92–96% (a specified 4–8% retention); National Lottery returns roughly half of stakes as prizes.
 
 ### Food
 
-- **Dale et al., [Circulation 2017;135:2373](<https://doi.org/10.1161/CIRCULATIONAHA.116.026560>)** — Mendelian randomisation: higher adiposity causally increases coronary heart disease, stroke and type 2 diabetes.
+- **Dale et al., [Circulation 2017;135:2373](<https://doi.org/10.1161/CIRCULATIONAHA.116.026560>)** — Mendelian randomisation: higher BMI causally increases coronary heart disease and type 2 diabetes; central (waist) adiposity also raises ischaemic stroke risk.
 - **Lauby-Secretan et al. (IARC Working Group), [NEJM 2016;375:794](<https://pubmed.ncbi.nlm.nih.gov/27557308/>)** — sufficient evidence that excess body fatness causes thirteen cancers.
 - **Global BMI Mortality Collaboration, [Lancet 2016;388:776](<https://doi.org/10.1016/S0140-6736(16)30175-1>)** — ~3.9 million adults; all-cause mortality lowest at BMI 20–25, ~31% higher per 5 kg/m² above 25.
 - **Simmonds et al., [Obes Rev 2016;17:95](<https://doi.org/10.1111/obr.12334>)** — obesity tracks from childhood; children with obesity ~5× as likely to have it as adults, ~80% of adolescents with obesity remain so.
@@ -64,7 +65,7 @@ A note on the arithmetic: a few figures (the roulette house edge, slot return-to
 - **Ekelund et al., [BMJ 2019;366:l4570](<https://doi.org/10.1136/bmj.l4570>)** — accelerometer meta-analysis, ~36,000 adults; front-loaded dose-response.
 - **Paluch et al., [Lancet Public Health 2022;7:e219](<https://doi.org/10.1016/S2468-2667(21)00302-9>)** — ~47,000 adults; most of the mortality benefit captured below the popular round step targets, then plateaus.
 - **Klimentidis et al., [Int J Obes 2018;42:1161](<https://doi.org/10.1038/s41366-018-0120-3>)** — genome-wide association study of physical activity, providing the genetic instruments used in Mendelian-randomisation analyses.
-- **Choi et al., [JAMA Psychiatry 2019;76:399](<https://doi.org/10.1001/jamapsychiatry.2018.4175>)** — two-sample Mendelian randomisation: physical activity causally lowers the risk of major depression.
+- **Choi et al., [JAMA Psychiatry 2019;76:399](<https://doi.org/10.1001/jamapsychiatry.2018.4175>)** — two-sample Mendelian randomisation: accelerometer-measured physical activity causally lowers the risk of major depression; no significant effect in the reverse direction.
 - **Stevinson et al., [Int J Behav Med 2015;22:170](<https://doi.org/10.1007/s12529-014-9431-5>)** — qualitative study of parkrun: free, inclusive, social features drive participation.
 - **Haake et al., [Health Promot Int 2022;37](<https://doi.org/10.1093/heapro/daab138>)** — parkrun uptake skews to more affluent areas (≈7× a deprived one), so provision alone is not equitable.
 

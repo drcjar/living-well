@@ -69,10 +69,12 @@ To see it bite, add an unsourced number to a slogan page and run `npm run check`
 
 ```
 content/            canonical markdown — the source of truth
-  index.md          the organising argument + the two-clock diagram
+  index.md          the list of pages + how to read them
   slogans/*.md      one page per slogan, all the same shape
+  five-things.md    the short version: five points per age, each linked to its page
+  words.md          plain-English glossary of the science words
   provenance.md     every figure, verified vs from-recall
-  talks/            one file per time the talk is given (_template.md to copy)
+  talks/            one file per talk or review (_template.md to copy)
 slides/deck.md      the Marp deck — a selection of the content, not a second copy
 src/                layouts, data, and the one hand-written stylesheet
 scripts/            the evidence linter

@@ -40,7 +40,7 @@ style: |
 
 ## Trust, but verify
 
-Every claim here carries its **study design**, its **effect size**, and its **honest weakness** — and links to the paper.
+Every claim here shows **how it was tested**, **how big the effect is**, and its **weakest point** — and links to the paper.
 
 - Don't be a cynic who believes nothing, or a pushover who believes everything.
 - Believe things **in proportion to the evidence** — then go and check.
@@ -51,18 +51,18 @@ Every claim here carries its **study design**, its **effect size**, and its **ho
 
 ## Two different clocks
 
-The usual advice is almost all about the **70-year clock**.
-Your next decade — the **10-year clock** — is a different list.
+**10-year clock:** the next ten years of your life — what could hurt you soon.
+**70-year clock:** your whole life ahead — what builds up slowly.
 
 | 10-year clock (you, now) | 70-year clock (lifetime) |
 |---|---|
 | Don't start nicotine | Smoking |
-| Alcohol & acute injury | Physical inactivity |
+| Alcohol & injury tonight | Physical inactivity |
 | Road (belt, helmet) | Diet / food environment |
 | Gambling on a phone | Alcohol · Gambling |
 | Sleep & mood | Sun · Sleep |
 
-The two lists barely overlap. Knowing **which clock** a message is on is half the point.
+Most advice is about the 70-year clock. The two lists barely overlap.
 
 ---
 
@@ -70,7 +70,7 @@ The two lists barely overlap. Knowing **which clock** a message is on is half th
 
 - Smokers die on average **~10 years** younger; two-thirds are killed by it (British Doctors Study; Banks 2015).
 - **But**: stopping before 40 avoids **>90%** of the excess risk; before 30, **>97%** (Pirie 2013).
-- And quitting is **achievable** — comprehensive support plus medicines (varenicline **RR 2.32**, NRT **RR 1.55**).
+- And quitting is **achievable** — support plus medicines: varenicline more than **doubles** the chance; patches or gum raise it by about **half**.
 
 Almost everyone who smokes for life starts young: **not starting** removes the whole problem.
 
@@ -78,17 +78,17 @@ Almost everyone who smokes for life starts young: **not starting** removes the w
 
 ## Alcohol: no safe dose
 
-- Risk rises from the **first drink** — the old "protective" J-curve was confounding (Millwood, genetic study 2019).
-- **But** it's a claim about the *shape* of the curve, not the *size*: one drink's risk is small.
-- For a teenager the danger is **tonight** — injury, not cirrhosis in thirty years.
+- **No amount is good for you.** The "healthy glass of wine" was a mistake in the old studies — a genetic study showed it (Millwood 2019).
+- **But one drink adds only a small risk.** The risk starts at the first drink and grows with each one. Say both halves, or people stop listening.
+- For a teenager the danger is **tonight** — injury, not liver disease in thirty years.
 
 ---
 
 ## Gambling: designed so you lose
 
-No statistics needed — the house edge is a **published design parameter**.
+No statistics needed. The **house edge** — the share of every £1 bet a game keeps, on average — is set by the company and **published**.
 
-- Roulette: **2.7%** (single-zero), **5.26%** (double). Online slots keep **4–8%** of everything staked.
+- Roulette keeps **2.7%** — just under 3p of every £1. Online slots keep **4–8%** of everything staked.
 - You are not unlucky — you are on the wrong side of a number the company **chose and published**.
 - Harm tracks the **product** (fast, continuous), not the personality.
 
@@ -96,7 +96,7 @@ No statistics needed — the house edge is a **published design parameter**.
 
 ## Eat food. Mostly plants. Not too much.
 
-- Excess body fat **causally** raises type-2 diabetes, heart disease, **13 cancers** and mortality (genetic studies; IARC).
+- Excess body fat really **causes** type-2 diabetes, heart disease, **13 cancers** and early death (gene studies; WHO cancer agency).
 - The body **defends** fat once gained, and it tracks from childhood — **prevention beats reversal**.
 - You eat more when food is processed and portions are big. **Change the defaults**, not your willpower.
 
@@ -106,9 +106,9 @@ No statistics needed — the house edge is a **published design parameter**.
 
 ## Move more, sit less
 
-- The biggest gain is simply **leaving the least-active group** — the curve is front-loaded (Ekelund 2019).
+- The biggest gain is simply **leaving the least-active group** — most of the benefit comes first (Ekelund 2019).
 - There is **no magic number** to hit.
-- It lifts your **mood now**: activity causally lowers depression (Choi 2019). Try **parkrun** — free, weekly, walk or run.
+- It lifts your **mood now**: being active really does lower the risk of depression (Choi 2019). Try **parkrun** — free, weekly, walk or run.
 
 ---
 
@@ -116,15 +116,15 @@ No statistics needed — the house edge is a **published design parameter**.
 
 - Best-evidenced as a **short-term** lever on mood and attention — the two weeks, not the fifty years.
 - Teenage body clocks **run late** — biology, not laziness.
-- Basics help: regular hours, dark room, **dim evening screens**, no late caffeine. *(Real insomnia → CBT-I, not a checklist.)*
+- Basics help: regular hours, dark room, **dim evening screens**, no late caffeine. *(Insomnia that won't go away → a proper therapy, CBT-I, not a checklist.)*
 
 ---
 
 ## Slip, slop, slap
 
-- The **best study design** on the whole list — an actual randomised trial (Nambour).
+- The **best-tested advice** on the whole list — a proper experiment, with people split into groups by chance (Nambour).
 - Daily sunscreen roughly **halved melanomas**, ten years after the trial ended.
-- Melanoma is already common in **15–34s**; sunbeds are a Group 1 carcinogen. Both clocks agree.
+- Melanoma is already common in **15–34s**; sunbeds are on the top list of proven causes of cancer. Both clocks agree.
 
 ---
 
@@ -133,7 +133,7 @@ No statistics needed — the house edge is a **published design parameter**.
 The biggest gains came from the **shared environment**, not from trying harder.
 
 - Smoke-free laws: heart-attack admissions **↓17%** (Scotland).
-- Minimum unit pricing: alcohol deaths **↓13.4%**. Sugar levy: drinks reformulated.
+- Minimum alcohol price: alcohol deaths **↓13.4%**. Sugar tax: the sugar came out of the drinks.
 - As you come of age, **engaging and voting** for health-promoting policy is itself a high-leverage act.
 
 ---
@@ -145,4 +145,4 @@ The biggest gains came from the **shared environment**, not from trying harder.
 *Smoking kills — stopping helps. Alcohol: no safe dose. Gambling: designed so you lose.*
 *Eat food, mostly plants, not too much. Move more, sit less. Sleep like it matters. Slip, slop, slap.*
 
-**Trust, but verify — the full evidence, with its weaknesses and links, is on the site.**
+**Trust, but verify — the full evidence, with its weaknesses and links, is on the site. So is the short version: five things for your age.**
