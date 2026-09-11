@@ -41,6 +41,16 @@ export default function (eleventyConfig) {
       "seventy-year": "70-yr clock",
       both: "both clocks",
     },
+    // One plain sentence per clock, shown under the badges. Reader feedback:
+    // the badge on its own ("Ten-year clock") meant nothing to younger readers.
+    clockExplain: {
+      "ten-year":
+        "Ten-year clock: this matters most over the next ten years of your life — how you feel and what could happen to you soon.",
+      "seventy-year":
+        "Seventy-year clock: this builds up slowly and matters over your whole life — roughly the next seventy years.",
+      both:
+        "Both clocks: this matters now, in the next ten years of your life, and over your whole life — roughly the next seventy years.",
+    },
   });
 
   // Collection of slogan pages, ordered by the `order` front-matter field so

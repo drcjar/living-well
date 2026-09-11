@@ -60,7 +60,7 @@ main { max-width: 46rem; margin: 0 auto; padding-block: 2.5rem 3rem; }
 }
 .site-title { font-weight: 700; text-decoration: none; color: var(--ink); letter-spacing: -0.01em; }
 .nav-list {
-  list-style: none; display: flex; gap: 1.25rem; margin: 0 0 0 auto;
+  list-style: none; display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; margin: 0 0 0 auto;
   padding: 0; font-size: 0.95rem;
 }
 .site-footer {
@@ -124,6 +124,7 @@ thead th {
 }
 .badge dd { font-family: var(--mono); margin: 0; font-weight: 600; font-size: 0.9rem; color: var(--ink); }
 .badge--confidence dd { color: var(--accent); }
+.clock-explain { font-size: 0.95rem; color: var(--ink-soft); margin: -0.75rem 0 1.75rem; max-width: var(--measure); }
 
 /* --- Age tabs (progressive enhancement over three stacked sections) --- */
 .age-tabs { margin: 1.5rem 0 2rem; }
