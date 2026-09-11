@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slides — Living Well and the Evidence</title>
+    <meta name="description" content="Download the whole thing as a slide deck — one per reading age, self-contained and ready for a classroom projector.">
+    <link rel="icon" type="image/svg+xml" href="/living-well/favicon.svg">
+    <meta name="theme-color" content="#0e6b6e">
+    <link rel="stylesheet" href="/living-well/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav aria-label="Primary">
+        <a class="site-title" href="/living-well/">Living Well &amp; the Evidence</a>
+        <ul class="nav-list">
+          <li><a href="/living-well/">Home</a></li>
+          <li><a href="/living-well/five-things/">Short version</a></li>
+          <li><a href="/living-well/words/">Words</a></li>
+          <li><a href="/living-well/quiz/">Quiz</a></li>
+          <li><a href="/living-well/provenance/">Provenance</a></li>
+          <li><a href="/living-well/slides/">Slides</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>Slides</h1>
+<p class="lede">The same content builds slide decks covering the entire site, one per reading age — self-contained, no network needed, ready for a classroom projector.</p>
+<ul class="downloads">
+  <li><a href="/living-well/deck-8-11.pdf"><span>The whole site — ages 8–11</span><span class="d-fmt">PDF</span></a></li>
+  <li><a href="/living-well/deck-11-16.pdf"><span>The whole site — ages 11–16</span><span class="d-fmt">PDF</span></a></li>
+  <li><a href="/living-well/deck-16plus.pdf"><span>The whole site — ages 16+</span><span class="d-fmt">PDF</span></a></li>
+  <li><a href="/living-well/deck.html"><span>The 20-minute talk (curated selection)</span><span class="d-fmt">Slides</span></a></li>
+</ul>
+<p>Each age deck is also viewable in the browser:
+<a href="/living-well/deck-8-11.html">8–11</a> · <a href="/living-well/deck-11-16.html">11–16</a> · <a href="/living-well/deck-16plus.html">16+</a>.
+The curated talk is also a <a href="/living-well/deck.pdf">printable PDF</a>.</p>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Code is <a href="https://github.com/drcjar/living-well/blob/main/LICENSE">MIT</a>.
+        Prose is <a href="https://github.com/drcjar/living-well/blob/main/LICENSE-CONTENT">CC&nbsp;BY&nbsp;4.0</a>.
+        This is a reference, not a campaign.
+      </p>
+      <p>
+        Every figure here is tracked in <a href="/living-well/provenance/">provenance</a>,
+        checked against its source and linked so you can read further.
+        <a href="https://github.com/drcjar/living-well">Source &amp; corrections on GitHub.</a>
+      </p>
+      <p>
+        Feedback or a correction? Email
+        <a href="mailto:carl.reynolds@nhs.net?subject=Living%20Well%20feedback">carl.reynolds@nhs.net</a>.
+      </p>
+    </footer>
+
+    
+    <script>
+    (function () {
+      var root = document.querySelector("[data-agetabs]");
+      if (!root) return;
+
+      // Collect the contiguous run of "For ages …" sections: each band is an <h2>
+      // plus every following sibling up to the next <h2>.
+      var kids = Array.prototype.slice.call(root.children);
+      var bands = [];
+      for (var i = 0; i < kids.length; i++) {
+        var el = kids[i];
+        if (el.tagName === "H2" && /^For ages\b/.test(el.textContent.trim())) {
+          var nodes = [el];
+          for (var j = i + 1; j < kids.length; j++) {
+            if (kids[j].tagName === "H2") break;
+            nodes.push(kids[j]);
+          }
+          bands.push({ heading: el, nodes: nodes });
+        }
+      }
+      if (bands.length < 2) return; // nothing to enhance
+
+      var groupId = "ages-" + Math.abs(hash(location.pathname));
+      var tablist = document.createElement("div");
+      tablist.className = "age-tablist";
+      tablist.setAttribute("role", "tablist");
+      tablist.setAttribute("aria-label", "Choose a reading age");
+
+      // Insert the (empty) tab container at the first band's position BEFORE moving
+      // any nodes — once the heading is pulled into a panel it is no longer a child
+      // of root, so we must anchor the insert while it is still in place.
+      var wrap = document.createElement("div");
+      wrap.className = "age-tabs";
+      wrap.appendChild(tablist);
+      root.insertBefore(wrap, bands[0].heading);
+
+      var panels = [];
+      bands.forEach(function (band, n) {
+        var label = band.heading.textContent.replace(/^For ages\s*/i, "").trim();
+        var panel = document.createElement("div");
+        panel.className = "age-panel";
+        panel.id = groupId + "-panel-" + n;
+        panel.setAttribute("role", "tabpanel");
+        panel.setAttribute("aria-labelledby", groupId + "-tab-" + n);
+        band.heading.style.display = "none"; // heading becomes the tab label
+        band.nodes.forEach(function (node) { panel.appendChild(node); });
+        wrap.appendChild(panel);
+
+        var tab = document.createElement("button");
+        tab.type = "button";
+        tab.className = "age-tab";
+        tab.id = groupId + "-tab-" + n;
+        tab.textContent = label;
+        tab.setAttribute("role", "tab");
+        tab.setAttribute("aria-controls", panel.id);
+        tab.addEventListener("click", function () { select(n); });
+        tab.addEventListener("keydown", function (e) {
+          if (e.key === "ArrowRight" || e.key === "ArrowDown") { e.preventDefault(); select((n + 1) % bands.length, true); }
+          else if (e.key === "ArrowLeft" || e.key === "ArrowUp") { e.preventDefault(); select((n - 1 + bands.length) % bands.length, true); }
+        });
+        tablist.appendChild(tab);
+        panels.push({ tab: tab, panel: panel });
+      });
+
+      function select(n, focus) {
+        panels.forEach(function (p, i) {
+          var on = i === n;
+          p.tab.setAttribute("aria-selected", on ? "true" : "false");
+          p.tab.tabIndex = on ? 0 : -1;
+          p.panel.hidden = !on;
+        });
+        if (focus) panels[n].tab.focus();
+      }
+      select(0);
+
+      function hash(s) { var h = 0; for (var i = 0; i < s.length; i++) { h = (h << 5) - h + s.charCodeAt(i); h |= 0; } return h; }
+    })();
+    </script>
+  </body>
+</html>

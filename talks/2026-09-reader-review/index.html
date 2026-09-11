@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reader review, September 2026 — Living Well and the Evidence</title>
+    <meta name="description" content="The first outside review of the site: a student reader&#39;s notes on what was too technical, and what changed as a result.">
+    <link rel="icon" type="image/svg+xml" href="/living-well/favicon.svg">
+    <meta name="theme-color" content="#0e6b6e">
+    <link rel="stylesheet" href="/living-well/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav aria-label="Primary">
+        <a class="site-title" href="/living-well/">Living Well &amp; the Evidence</a>
+        <ul class="nav-list">
+          <li><a href="/living-well/">Home</a></li>
+          <li><a href="/living-well/five-things/">Short version</a></li>
+          <li><a href="/living-well/words/">Words</a></li>
+          <li><a href="/living-well/quiz/">Quiz</a></li>
+          <li><a href="/living-well/provenance/">Provenance</a></li>
+          <li><a href="/living-well/slides/">Slides</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>Reader review — September 2026</h1>
+<ul>
+<li><strong>Reviewer:</strong> a secondary-school student who read the whole site in 2026. Their name is withheld until they choose how they would like to be credited (see CONTRIBUTING).</li>
+<li><strong>Counts as:</strong> outside review 1 of the 2 required before the first school talk (CONTRIBUTING, &quot;The first talk waits for outside review&quot;).</li>
+</ul>
+<p>Their overall verdict: they liked that it is evidence-based but honest, and that it doesn't blame people for their health — but it needed to be <strong>simpler: less technical, not shorter.</strong> That became the rule for every change below.</p>
+<table>
+<thead>
+<tr>
+<th>What they said (paraphrased)</th>
+<th>What changed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The &quot;ten-year&quot; and &quot;seventy-year&quot; clocks are never explained — younger readers won't know what they mean.</td>
+<td>Every page now has a plain sentence under its clock badge. The home page and <em>Trust but verify</em> explain both clocks, and the 8–11 tab on <em>Trust but verify</em> now covers them too.</td>
+</tr>
+<tr>
+<td>Words like &quot;acute&quot;, &quot;salient&quot;, &quot;causal&quot; and &quot;quasi-experimental&quot; go over the heads of 8–11 and 11–16 readers.</td>
+<td>Replaced across the age tabs, the verdict lines under each title, and the clock diagram. A new <a href="/living-well/words/">Words we use</a> page explains the science terms that have to stay.</td>
+</tr>
+<tr>
+<td>The age tabs are well pitched to their readers, and the visuals are good.</td>
+<td>Kept.</td>
+</tr>
+<tr>
+<td>Study summaries are too short to follow — e.g. &quot;hospital case-control, 649 lung cancer cases; the association was already unmissable&quot; (seen under the 8–11 tab).</td>
+<td>Every study in every evidence section now starts with what the researchers did and what they found, in plain words, with the technical name after. We also realised the evidence section is <em>shared</em> by all three ages — which is why it read as part of the 8–11 tab — so each one now says so.</td>
+</tr>
+<tr>
+<td>&quot;About the shape of a curve, not the size of a risk&quot; (alcohol) is too abstract, though a nice idea.</td>
+<td>Rewritten as two plain halves wherever it appeared (page, quiz, slides): no amount is good for you and the risk starts at the first drink — but one drink adds only a small risk.</td>
+</tr>
+<tr>
+<td>Gambling: &quot;house edge&quot; and &quot;p-value&quot; are never explained.</td>
+<td>Both are explained where they are used, with a worked example (roulette keeps just under 3p of every £1).</td>
+</tr>
+<tr>
+<td>Suggestion: a five-point list for living better, for each age — or would that contradict the site's ethos?</td>
+<td>Built as <a href="/living-well/five-things/">The short version</a>. A list with no working shown <em>would</em> contradict the site, so every point states how sure we are and links back to its evidence, and the page says to trust the full page if the two ever seem to disagree.</td>
+</tr>
+</tbody>
+</table>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Code is <a href="https://github.com/drcjar/living-well/blob/main/LICENSE">MIT</a>.
+        Prose is <a href="https://github.com/drcjar/living-well/blob/main/LICENSE-CONTENT">CC&nbsp;BY&nbsp;4.0</a>.
+        This is a reference, not a campaign.
+      </p>
+      <p>
+        Every figure here is tracked in <a href="/living-well/provenance/">provenance</a>,
+        checked against its source and linked so you can read further.
+        <a href="https://github.com/drcjar/living-well">Source &amp; corrections on GitHub.</a>
+      </p>
+      <p>
+        Feedback or a correction? Email
+        <a href="mailto:carl.reynolds@nhs.net?subject=Living%20Well%20feedback">carl.reynolds@nhs.net</a>.
+      </p>
+    </footer>
+
+    
+    <script>
+    (function () {
+      var root = document.querySelector("[data-agetabs]");
+      if (!root) return;
+
+      // Collect the contiguous run of "For ages …" sections: each band is an <h2>
+      // plus every following sibling up to the next <h2>.
+      var kids = Array.prototype.slice.call(root.children);
+      var bands = [];
+      for (var i = 0; i < kids.length; i++) {
+        var el = kids[i];
+        if (el.tagName === "H2" && /^For ages\b/.test(el.textContent.trim())) {
+          var nodes = [el];
+          for (var j = i + 1; j < kids.length; j++) {
+            if (kids[j].tagName === "H2") break;
+            nodes.push(kids[j]);
+          }
+          bands.push({ heading: el, nodes: nodes });
+        }
+      }
+      if (bands.length < 2) return; // nothing to enhance
+
+      var groupId = "ages-" + Math.abs(hash(location.pathname));
+      var tablist = document.createElement("div");
+      tablist.className = "age-tablist";
+      tablist.setAttribute("role", "tablist");
+      tablist.setAttribute("aria-label", "Choose a reading age");
+
+      // Insert the (empty) tab container at the first band's position BEFORE moving
+      // any nodes — once the heading is pulled into a panel it is no longer a child
+      // of root, so we must anchor the insert while it is still in place.
+      var wrap = document.createElement("div");
+      wrap.className = "age-tabs";
+      wrap.appendChild(tablist);
+      root.insertBefore(wrap, bands[0].heading);
+
+      var panels = [];
+      bands.forEach(function (band, n) {
+        var label = band.heading.textContent.replace(/^For ages\s*/i, "").trim();
+        var panel = document.createElement("div");
+        panel.className = "age-panel";
+        panel.id = groupId + "-panel-" + n;
+        panel.setAttribute("role", "tabpanel");
+        panel.setAttribute("aria-labelledby", groupId + "-tab-" + n);
+        band.heading.style.display = "none"; // heading becomes the tab label
+        band.nodes.forEach(function (node) { panel.appendChild(node); });
+        wrap.appendChild(panel);
+
+        var tab = document.createElement("button");
+        tab.type = "button";
+        tab.className = "age-tab";
+        tab.id = groupId + "-tab-" + n;
+        tab.textContent = label;
+        tab.setAttribute("role", "tab");
+        tab.setAttribute("aria-controls", panel.id);
+        tab.addEventListener("click", function () { select(n); });
+        tab.addEventListener("keydown", function (e) {
+          if (e.key === "ArrowRight" || e.key === "ArrowDown") { e.preventDefault(); select((n + 1) % bands.length, true); }
+          else if (e.key === "ArrowLeft" || e.key === "ArrowUp") { e.preventDefault(); select((n - 1 + bands.length) % bands.length, true); }
+        });
+        tablist.appendChild(tab);
+        panels.push({ tab: tab, panel: panel });
+      });
+
+      function select(n, focus) {
+        panels.forEach(function (p, i) {
+          var on = i === n;
+          p.tab.setAttribute("aria-selected", on ? "true" : "false");
+          p.tab.tabIndex = on ? 0 : -1;
+          p.panel.hidden = !on;
+        });
+        if (focus) panels[n].tab.focus();
+      }
+      select(0);
+
+      function hash(s) { var h = 0; for (var i = 0; i < s.length; i++) { h = (h << 5) - h + s.charCodeAt(i); h |= 0; } return h; }
+    })();
+    </script>
+  </body>
+</html>
